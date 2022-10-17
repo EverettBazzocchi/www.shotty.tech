@@ -1,0 +1,140 @@
+/* Path: src\Components\Components\Components/TopNav.js */
+div#TopNav {
+    background-color: black;
+    width: 100vw;
+    height: 30px;
+}
+
+#TopNav h2,
+h1 {
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 25px;
+    width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+#TopNav h1 {
+    float: left;
+}
+#TopNav h2 {
+    float: right;
+}
+
+#TopNav h2 a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Path: src\Components\Components\Components/Banner.js */
+div#Banner {
+    background-color: #aaa;
+    width: 100vw;
+    height: 400px;
+    background-image: url(https://assets.darklordbazz.com/img/shottyAssets/logo-back.png);
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    background-position: center;
+    background-size: cover;
+}
+
+#Banner > #Blur {
+    backdrop-filter: brightness(0.5) blur(15px);
+    width: 100%;
+    height: 100%;
+}
+
+#Banner #Logo {
+    position: absolute;
+    padding-top: 20px;
+    height: 300px;
+    transform: scale(1);
+    animation: pulse 3s infinite;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    z-index: 10;
+    margin: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0px) translateX(-50%);
+    }
+    50% {
+        transform: translateY(20px) translateX(-50%);
+    }
+    100% {
+        transform: translateY(0px) translateX(-50%);
+    }
+}
+
+/* Path: src\Components\Components\Components/Nav.js */
+
+nav {
+    background-color: #434343;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 0px;
+}
+
+#right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.nav li{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    list-style: none;
+    border-radius: 0px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+a.active  {
+    background-color: #252525;
+}
+a.active li {
+    text-decoration: underline;
+}
+
+.nav a{
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 50px;
+    border-radius: 0px; 
+}

@@ -12,8 +12,6 @@ import Fun from "./Pages/Fun/Fun";
 import Rules from "./Pages/Rules/Rules";
 import Changelog from "./Pages/Changelog/Changelog";
 
-import './App.css';
-
 function App() {
     return (
         <Router>
