@@ -1,9 +1,9 @@
 import { Client as Appwrite, Databases, Account } from 'appwrite';
 
 const config = {
-    endpoint: 'http://api2.darklordbazz.com/v1',
+    endpoint: 'https://api2.darklordbazz.com/v1',
     project: 'ShottyGamingAPI',
-    database: 'ShottyGamingDB',
+    databaseID: 'ShottyGamingDB',
 
 }
 
@@ -55,3 +55,5 @@ let api = {
         return api.provider().database.deleteDocument(collectionId, documentId);
     },
 };
+
+export default api;

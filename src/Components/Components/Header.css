@@ -3,6 +3,10 @@ div#TopNav {
     background-color: black;
     width: 100vw;
     height: 30px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
 }
 
 #TopNav h2,
@@ -34,6 +38,7 @@ h1 {
 
 /* Path: src\Components\Components\Components/Banner.js */
 div#Banner {
+    margin-top: 30px;
     background-color: #aaa;
     width: 100vw;
     height: 400px;

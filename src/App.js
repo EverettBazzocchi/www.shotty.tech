@@ -1,5 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+import api from "./api";
+
 import Login from "./Pages/Login/Login";
 
 import Footer from "./Components/Footer";
@@ -12,11 +14,15 @@ import Fun from "./Pages/Fun/Fun";
 import Rules from "./Pages/Rules/Rules";
 import Changelog from "./Pages/Changelog/Changelog";
 
+import "./App.css";
+
 function App() {
+    api.provider();
+
     return (
         <Router>
             <Header />
-            <content>
+            <main>
                 <Routes>
                     <Route path="/login/*" element={<Login/>} />
                     <Route path="/servers/*" element={<Servers/>} />
@@ -26,7 +32,7 @@ function App() {
                     <Route path="/changelog/*" element={<Changelog/>} />
                     <Route path="*" element={<Home/>} />
                 </Routes>
-            </content>
+            </main>
             <Footer />
         </Router>
     );
