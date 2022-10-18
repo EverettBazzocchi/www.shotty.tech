@@ -7,21 +7,32 @@ import CreatePost from "./Components/CreatePost";
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
+    const [username, setUsername] = useState('')
+    useEffect(() => {
+        try {
+            api.getAccount().then((response) => {
+                setUsername(response.name)
+            })
+        } catch (error) {
+            setUsername(null)
+        }
+    }, [])
 
     useEffect(() => {
         api.listDocuments("posts").then((response) => {
             setPosts(response.documents.sort((a, b) => (b.date > a.date ? 1 : -1)));
         })
     }, []);
+
+    var LoggedIn;
+
+    if (username) {
+        LoggedIn = <CreatePost username={username} />
+    }
+
     return (
         <div>
-            {
-                function () {
-                    if (api.getAccount()) {
-                        return <CreatePost />
-                    }
-                }
-            }
+            {LoggedIn}
 
             {
                 posts.map((post) => {

@@ -36,10 +36,10 @@ const PostLayout = ({ title, author, date, content }) => {
     return (
         <article className="Blog-Post">
             <div className="Blog-Post-Top">
-                <div class="Blog-Post-Top-Left">
+                <div className="Blog-Post-Top-Left">
                     <h2 className="Blog-Title">{title}</h2>
                 </div>
-                <div class="Blog-Post-Top-Right">
+                <div className="Blog-Post-Top-Right">
                     <p className="Blog-Author">{author}</p>
                     <p className="blog-Date">{newDate}</p>
                 </div>

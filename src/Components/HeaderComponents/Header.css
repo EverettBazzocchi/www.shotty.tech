@@ -11,7 +11,6 @@ div#TopNav {
 
 #TopNav h2,
 h1 {
-    text-transform: uppercase;
     color: whitesmoke;
     font-family: 'Roboto';
     font-weight: bold;
@@ -19,13 +18,14 @@ h1 {
     font-size: 17px;
     line-height: 25px;
     width: fit-content;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 2px;
 }
 
 #TopNav h1 {
     float: left;
+    text-transform: uppercase;
 }
 #TopNav h2 {
     float: right;
@@ -41,7 +41,7 @@ div#Banner {
     margin-top: 30px;
     background-color: #aaa;
     width: 100vw;
-    height: 400px;
+    height: 250px;
     background-image: url(https://assets.darklordbazz.com/img/shottyAssets/logo-back.png);
     background-repeat: no-repeat;
     background-blend-mode: normal;
@@ -57,8 +57,8 @@ div#Banner {
 
 #Banner #Logo {
     position: absolute;
-    padding-top: 20px;
-    height: 300px;
+    padding-top: 0px;
+    height: 200px;
     transform: scale(1);
     animation: pulse 3s infinite;
     left: 50%;
