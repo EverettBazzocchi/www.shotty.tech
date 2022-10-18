@@ -87,7 +87,7 @@ div#Banner {
 
 /* Path: src\Components\Components\Components/Nav.js */
 
-nav {
+header nav {
     background-color: #434343;
     width: 100vw;
     height: 50px;
@@ -128,10 +128,10 @@ nav {
     box-sizing: border-box;
 }
 
-a.active  {
+header .nav a.active  {
     background-color: #252525;
 }
-a.active li {
+header a.active li {
     text-decoration: underline;
 }
 

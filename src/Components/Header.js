@@ -1,8 +1,8 @@
-import TopNav from './Components/TopNav'
-import Banner from './Components/Banner'
-import Nav from './Components/Nav'
+import TopNav from './HeaderComponents/TopNav'
+import Banner from './HeaderComponents/Banner'
+import Nav from './HeaderComponents/Nav'
 
-import "./Components/Header.css"
+import "./HeaderComponents/Header.css"
 
 const Header = () => {
   return (
