@@ -13,6 +13,7 @@ import Home from "./Pages/Home/Home";
 import Fun from "./Pages/Fun/Fun";
 import Rules from "./Pages/Rules/Rules";
 import Changelog from "./Pages/Changelog/Changelog";
+import Profile from "./Pages/Profile/Profile";
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/fun/*" element={<Fun/>} />
                     <Route path="/rules/*" element={<Rules/>} />
                     <Route path="/changelog/*" element={<Changelog/>} />
+                    <Route path="/profile/*" element={<Profile/>} />
                     <Route path="*" element={<Home/>} />
                 </Routes>
             </main>

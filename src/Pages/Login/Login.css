@@ -1,0 +1,75 @@
+article#Login {
+    font-family: 'Roboto', sans-serif;
+    margin: 30px auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 80%;
+    padding: 0px;
+    background-color: #404040;
+    color: white;
+    min-height: 40vh;
+    
+}
+
+.Login-Top {
+    line-height: 75px;
+    text-align: center;
+    height: 75px;
+    display: flex;
+    width: 100%;
+    background-color: #202020;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login-Top h2 {
+    line-height: 75px;
+}
+
+#Login div {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#Login-Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Login-Form input {
+    color: whitesmoke;
+    width: 80%;
+    min-width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #202020;
+}
+
+#Login-Form input:focus {
+    outline: none;
+}
+
+#Login-Form button {
+    color: whitesmoke;
+    width: 80%;
+    min-width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #202020;
+    cursor: pointer;
+}
+

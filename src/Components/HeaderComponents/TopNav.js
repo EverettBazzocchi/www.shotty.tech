@@ -4,10 +4,9 @@ import { NavLink } from 'react-router-dom';
 import "./Header.css"
 
 function logout() {
-    api.deleteCurrentSession()
-    setTimeout(() => {
+    api.deleteCurrentSession().then(() => {
         window.location.reload();
-    }, 1000);
+    })
 }
 
 const TopNav = () => {
@@ -24,7 +23,7 @@ const TopNav = () => {
 
     var h2tag;
     if (username) {
-        h2tag = <h2>Welcome, {username} <button onClick={logout}>Logout</button></h2>
+        h2tag = <h2><NavLink to="/profile">Welcome, {username}</NavLink> <button onClick={logout}>Logout</button></h2>
     } else h2tag = <h2><NavLink to="/login">Staff Login</NavLink></h2>
 
     return (

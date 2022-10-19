@@ -9,8 +9,19 @@ div#TopNav {
     z-index: 100;
 }
 
+#TopNav h2 button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 0px !important;
+    font-size: 17px;
+    line-height: 20px;
+    border-left: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
 #TopNav h2,
-h1 {
+#TopNav h1 {
     color: whitesmoke;
     font-family: 'Roboto';
     font-weight: bold;
