@@ -25,14 +25,14 @@ function App() {
             <Header />
             <main>
                 <Routes>
-                    <Route path="/login/*" element={<Login/>} />
-                    <Route path="/servers/*" element={<Servers/>} />
-                    <Route path="/staff/*" element={<Staff/>} />
-                    <Route path="/fun/*" element={<Fun/>} />
-                    <Route path="/rules/*" element={<Rules/>} />
-                    <Route path="/changelog/*" element={<Changelog/>} />
-                    <Route path="/profile/*" element={<Profile/>} />
-                    <Route path="*" element={<Home/>} />
+                    <Route path="/login/*" element={<Login />} />
+                    <Route path="/servers/*" element={<Servers />} />
+                    <Route path="/staff/*" element={<Staff />} />
+                    <Route path="/fun/*" element={<Fun />} />
+                    <Route path="/rules/*" element={<Rules />} />
+                    <Route path="/changelog/*" element={<Changelog />} />
+                    <Route path="/profile/*" element={<Profile />} />
+                    <Route path="*" element={<Home />} />
                 </Routes>
             </main>
             <Footer />
