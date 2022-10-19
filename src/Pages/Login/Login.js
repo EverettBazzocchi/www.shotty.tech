@@ -1,5 +1,4 @@
 
-import { useState, useEffect } from 'react'
 import api from '../../api'
 
 import './Login.css';
@@ -10,7 +9,7 @@ function login() {
     let email = document.getElementById('email').value
     try {
         api.createSession(email, password)
-        .then((response) => {
+        .then(() => {
             document.location.href = "/";
         })
     } catch (error) {
