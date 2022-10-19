@@ -31,8 +31,8 @@ let api = {
         return api.provider().account.createEmailSession(email, password);
     },
 
-    updatePassword: (password) => {
-        return api.provider().account.updatePassword(password);
+    updatePassword: (oldPassword, newPassword) => {
+        return api.provider().account.updatePassword(newPassword, oldPassword);
     },
 
     deleteCurrentSession: () => {

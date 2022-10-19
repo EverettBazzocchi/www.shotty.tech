@@ -9,13 +9,9 @@ const Home = () => {
     const [posts, setPosts] = useState([]);
     const [username, setUsername] = useState('')
     useEffect(() => {
-        try {
-            api.getAccount().then((response) => {
-                setUsername(response.name)
-            })
-        } catch (error) {
-            setUsername(null)
-        }
+        api.getAccount().then((response) => {
+            setUsername(response.name)
+        })
     }, [])
 
     useEffect(() => {
