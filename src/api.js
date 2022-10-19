@@ -1,4 +1,4 @@
-import { Client as Appwrite, Databases, Account } from 'appwrite';
+import { Client as Appwrite, Databases, Account, Query } from 'appwrite';
 
 const config = {
     endpoint: 'https://api2.darklordbazz.com/v1',
@@ -47,6 +47,10 @@ let api = {
 
     listDocuments: (collectionId) => {
         return api.provider().database.listDocuments(collectionId);
+    },
+
+    listDocumentsWithQuery: (collectionId, query, queryAnswer) => {
+        return api.provider().database.listDocuments(collectionId, [Query.equal(query, queryAnswer)]);
     },
 
     updateDocument: (collectionId, documentId, data, read, write) => {

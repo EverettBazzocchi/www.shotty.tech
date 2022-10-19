@@ -1,0 +1,55 @@
+.Blog-Post-Form input,
+.Blog-Post-Form textarea {
+    color: white;
+    width: 60%;
+    min-width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #202020;
+    text-align: left;
+}
+
+.Blog-Post-Form label {
+    text-align: left !important;
+    margin: 0px !important;
+    line-height: normal !important;
+    width: 60%;
+    min-width: 150px;
+}
+
+.Blog-Post-Form textarea {
+    height: 100px !important;
+    width: 60%;
+}
+
+.Blog-Post-Form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Blog-Post-Form button {
+    color: whitesmoke;
+    width: 10%;
+    min-width: 50px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #202020;
+    cursor: pointer;
+}
+
+.Blog-Post-Form h3 {
+    margin: 0px;
+}

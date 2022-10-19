@@ -1,0 +1,90 @@
+#Card-Div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-width: 350px;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Server-Card {
+    background-color: #404040;
+    margin: 25px;
+    width: 200px;
+    height: 300px;
+    box-shadow: #707070 1px 1px 2px;
+    box-sizing: border-box;
+}
+
+.Dark-Card {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #202020;
+    width: 100%;
+    font-size: 20px;
+    height: 65px;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 65px;
+}
+
+.Dark-Card h3 {
+    margin: 0px;
+}
+
+.online {
+    color: green;
+}
+.offline {
+    color: rgb(197, 0, 0);
+}
+
+.Light-Card {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 5px;
+}
+
+/*.Member {
+    display: none;
+}*/
+
+.Player {
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.Player-List {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+
+    height: calc(300px - 65px - 65px - 65px );
+    overflow: scroll;
+    text-align: left;
+}
+
+

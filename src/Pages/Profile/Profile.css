@@ -73,9 +73,15 @@ article#Profile {
 }
 
 .Profile-Settings label {
-    text-align: center !important;
+    text-align: left !important;
     margin: 0px !important;
     line-height: normal !important;
+    width: 100%;
+    min-width: 150px;
+}
+
+.Profile-Settings textarea, .Profile-Settings select {
+    margin-top: 0px !important;
 }
 
 .Profile-Settings {
