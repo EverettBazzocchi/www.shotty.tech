@@ -11,6 +11,9 @@ function submitPost(username) {
         document.getElementById("Blog-Post-Form-Title").value = "";
         document.getElementById("Blog-Post-Form-Message").value = "";
     }).catch((error) => {
+        if (error == "AppwriteException: Unauthorized permissions") {
+            document.getElementById("postError").innerHTML = "Sorry, You are not authorized to create posts, please contact an admin.";
+        }
         document.getElementById("postError").innerHTML = error;
     })
 }
