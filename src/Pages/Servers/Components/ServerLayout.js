@@ -26,7 +26,6 @@ const ServerLayout = ({ name, players, count, status }) => {
                         setPlayerJson(() => [...playerJson, { "player" : player, "rank" : "Player Member" }])
                     }
                 })
-
         })
 
     }, [players])

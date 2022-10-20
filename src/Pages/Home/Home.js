@@ -4,6 +4,7 @@ import "./Home.css";
 
 import PostLayout from "./Components/PostLayout";
 import CreatePost from "./Components/CreatePost";
+import AuthorView from "./Components/AuthorView";
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
@@ -32,9 +33,13 @@ const Home = () => {
 
             {
                 posts.map((post) => {
-                    return (
-                        <PostLayout key={post.$id} title={post.title} author={post.author} date={post.date} content={post.message} />
-                    )
+                    if (post.author == username) {
+                        return <AuthorView key={post.$id} title={post.title} author={post.author} date={post.date} content={post.message} />
+                    } else {
+                        return (
+                            <PostLayout key={post.$id} title={post.title} author={post.author} date={post.date} content={post.message} />
+                        )
+                    }
                 })
             }
         </div>

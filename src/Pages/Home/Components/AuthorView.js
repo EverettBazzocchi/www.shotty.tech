@@ -1,3 +1,6 @@
+import api from '../../../api'
+import { useEffect, useState } from 'react'
+
 import "./PostLayout.css";
 
 function timeSince(date) {
@@ -52,7 +55,7 @@ function timeSince(date) {
     }
 }
 
-const PostLayout = ({ title, author, date, content }) => {
+const AuthorView = ({ title, author, date, content }) => {
 
     let newDate = new Date(date);
     newDate = timeSince(newDate) + " ago";
@@ -64,7 +67,7 @@ const PostLayout = ({ title, author, date, content }) => {
                     <h2 className="Blog-Title">{title}</h2>
                 </div>
                 <div className="Blog-Post-Top-Right">
-                    <p className="Blog-Author">{author}</p>
+                    <p className="Blog-Author">You ({author})</p>
                     <p className="blog-Date">{newDate}</p>
                 </div>
             </div>
@@ -75,4 +78,4 @@ const PostLayout = ({ title, author, date, content }) => {
     )
 }
 
-export default PostLayout
+export default AuthorView

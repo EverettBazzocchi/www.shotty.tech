@@ -2,7 +2,7 @@
     font-family: "Roboto", sans-serif;
     margin: 30px auto;
     max-width: 1200px;
-    min-width: 500px;
+    min-width: 750px;
     width: 90%;
     padding: 0px;
     background-color: #404040;
@@ -10,7 +10,7 @@
     height: 850px;
 }
 
-#Staff-Page h3 {
+#Staff-Page > h3 {
     text-align: center;
     padding: 15px;
     width: 100%;
@@ -20,7 +20,7 @@
     height: 50px;
 }
 
-#Staff-Page aside { 
+#Staff-Page > aside { 
     float:left;
     position: inline;
     height: 800px;
@@ -31,7 +31,7 @@
     border-right: 1px solid #202020;
 }
 
-#Staff-Page aside > h4 {
+#Staff-Page > aside > h4 {
     border-top: 1px solid #303030;
     margin-top: 0px;
     margin-bottom: 1px;
@@ -41,19 +41,19 @@
     background-color: #202020;
 }
 
-#Staff-Page aside li {
+#Staff-Page > aside li {
     color: white;
     text-decoration: none;
     list-style: none;
 }
 
-#Staff-Page aside a:hover {
+#Staff-Page > aside a:hover {
     background-color: #303030;
     cursor: pointer;
     border: 0px;
 }
 
-#Staff-Page aside .active{
+#Staff-Page > aside .active{
     box-sizing: border-box;
     background-color: #303030;
     border: 0px;
@@ -81,7 +81,7 @@
     margin-bottom: 15px;
 }
 
-#Staff-Page aside ul h4 {
+#Staff-Page > aside ul h4 {
     border-top: 1px solid #303030;
     box-sizing: border-box;
     margin: 0%;
@@ -93,9 +93,92 @@
 }
 
 .Staff-Profile {
-    padding: 15px;
     float: right;
     box-sizing: border-box;
     width: calc(100% - 250px);
     height: 800px;
+}
+
+.Staff-Profile > h3 {
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #202020;
+}
+
+.Staff-Profile > aside {
+    float: left;
+    width: 300px;
+    height: 715px;
+    margin: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid #505050;
+    background-image: url(https://assets.darklordbazz.com/img/botSiteAssets/skinback.jpg);
+    background-size: 800px;
+}
+
+.Staff-Profile > section {
+    float: right;
+    height: 750px;
+    width: calc(100% - 330px);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.Staff-Profile > section > p {
+    margin-top: 20%;
+    text-align: left;
+}
+
+.Staff-Profile > aside > img {
+    width: 250px;
+    height: auto;
+}
+
+.Staff-Stats {
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Staff-Stat-Card {
+    background-color: #303030;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+    box-sizing: border-box;
+} 
+
+.Staff-Stat-Card > h4 {
+    background-color: #202020;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+
+.Staff-Stat-Card > p {
+    margin-top: 40%;
+    margin: 0px;
+    padding: 0px;
+    line-height: 25px;
+}
+
+.Staff-Stat-Card.fav-server {
+    margin: auto;
+    width: 150px;
 }

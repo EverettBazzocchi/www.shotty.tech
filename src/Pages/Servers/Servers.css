@@ -16,7 +16,6 @@
     margin: 25px;
     width: 200px;
     height: 300px;
-    box-shadow: #707070 1px 1px 2px;
     box-sizing: border-box;
 }
 
@@ -33,7 +32,6 @@
     width: 100%;
     font-size: 20px;
     height: 65px;
-    border-radius: 5px;
     display: inline-block;
     line-height: 65px;
 }
