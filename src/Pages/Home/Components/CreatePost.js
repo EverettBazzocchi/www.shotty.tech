@@ -14,7 +14,9 @@ function submitPost(username) {
         if (error == "AppwriteException: Unauthorized permissions") {
             document.getElementById("postError").innerHTML = "Sorry, You are not authorized to create posts, please contact an admin.";
         }
-        document.getElementById("postError").innerHTML = error;
+        else {
+            document.getElementById("postError").innerHTML = error;
+        }
     })
 }
 
