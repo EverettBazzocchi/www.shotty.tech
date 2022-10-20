@@ -58,7 +58,7 @@ const Profile = () => {
     const [description, setDescription] = useState("");
 
     api.getAccount().catch(() => {
-        document.location.href = "/";
+        document.location.href = "/Login?redirect=/Profile";
     });
 
     const [username, setUsername] = useState('')
