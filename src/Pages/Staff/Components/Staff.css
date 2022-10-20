@@ -1,0 +1,101 @@
+#Staff-Page {
+    font-family: "Roboto", sans-serif;
+    margin: 30px auto;
+    max-width: 1200px;
+    min-width: 500px;
+    width: 90%;
+    padding: 0px;
+    background-color: #404040;
+    color: white;
+    height: 850px;
+}
+
+#Staff-Page h3 {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    background-color: #202020;
+    margin: 0%;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+#Staff-Page aside { 
+    float:left;
+    position: inline;
+    height: 800px;
+    overflow-y: scroll;
+    width: 250px;
+    margin: 0%;
+    box-sizing: border-box;
+    border-right: 1px solid #202020;
+}
+
+#Staff-Page aside > h4 {
+    border-top: 1px solid #303030;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #202020;
+}
+
+#Staff-Page aside li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+#Staff-Page aside a:hover {
+    background-color: #303030;
+    cursor: pointer;
+    border: 0px;
+}
+
+#Staff-Page aside .active{
+    box-sizing: border-box;
+    background-color: #303030;
+    border: 0px;
+}
+
+#Staff-Page a {
+    text-decoration: none;
+    line-height: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    display: block;
+    height: 50px;
+    border-bottom: 1px solid #353535;
+}
+
+#Staff-Page ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#Staff-Page ul a:last-child {
+    margin-bottom: 15px;
+}
+
+#Staff-Page aside ul h4 {
+    border-top: 1px solid #303030;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #252525;
+}
+
+.Staff-Profile {
+    padding: 15px;
+    float: right;
+    box-sizing: border-box;
+    width: calc(100% - 250px);
+    height: 800px;
+}

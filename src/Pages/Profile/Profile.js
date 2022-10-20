@@ -11,7 +11,7 @@ function changePassword() {
     if (newPassword === confirmPassword) {
         api.updatePassword(oldPassword, newPassword)
             .then(() => {
-                document.getElementById('error').innerHTML = "Password Changed";
+                document.getElementById('password-error').innerHTML = "Password Changed";
 
                 oldPassword = document.getElementById('oldPassword').value = ""
                 newPassword = document.getElementById('newPassword').value = ""

@@ -2,7 +2,7 @@
 
 const Profile = (staff) => {
     return (
-        <div>Profile</div>
+        <article class="Staff-Profile">Profile</article>
     )
 }
 
