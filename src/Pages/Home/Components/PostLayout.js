@@ -61,7 +61,7 @@ const PostLayout = ({ title, author, date, content }) => {
         <article className="Blog-Post">
             <div className="Blog-Post-Top">
                 <div className="Blog-Post-Top-Left">
-                    <h2 className="Blog-Title">{title}</h2>
+                    <h2 className="Blog-Title" dangerouslySetInnerHTML={{__html: title}}></h2>
                 </div>
                 <div className="Blog-Post-Top-Right">
                     <p className="Blog-Author">{author}</p>
@@ -69,7 +69,7 @@ const PostLayout = ({ title, author, date, content }) => {
                 </div>
             </div>
             <div className="Blog-Post-Content">
-                <pre className="Blog-Content">{content}</pre>
+                <pre className="Blog-Content" dangerouslySetInnerHTML={{__html: content}}></pre>
             </div>
         </article>
     )

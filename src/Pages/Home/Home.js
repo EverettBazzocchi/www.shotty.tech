@@ -34,7 +34,7 @@ const Home = () => {
             {
                 posts.map((post) => {
                     if (post.author == username) {
-                        return <AuthorView key={post.$id} title={post.title} author={post.author} date={post.date} content={post.message} />
+                        return <AuthorView key={post.$id} id={post.$id} title={post.title} author={post.author} date={post.date} content={post.message} />
                     } else {
                         return (
                             <PostLayout key={post.$id} title={post.title} author={post.author} date={post.date} content={post.message} />
