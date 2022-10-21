@@ -136,7 +136,11 @@
 
 .Staff-Profile > section > p {
     margin-top: 20%;
+    height: auto;
     text-align: left;
+    width: 90%;
+    word-break: break-all;
+    hyphens: auto;
 }
 
 .Staff-Profile > aside > img {
