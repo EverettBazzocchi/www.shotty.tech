@@ -161,7 +161,9 @@
     height: 60px;
     width: 60px;
     margin: 15px;
+    margin-top: 15px;
     box-sizing: border-box;
+    text-transform: capitalize;
 } 
 
 .Staff-Stat-Card > h4 {
@@ -178,7 +180,7 @@
     line-height: 25px;
 }
 
-.Staff-Stat-Card.fav-server {
-    margin: auto;
-    width: 150px;
+.Staff-Stat-Card.Stats-One {
+    width: 175px;
+
 }
